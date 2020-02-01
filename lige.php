@@ -85,13 +85,24 @@
             
             dataType: "json",
             success: function(result){
-              var text = '<table class="table table-stipped"><thead><tr><th>Liga</th><th>Ukupno kola</th><th>Ukupno timova</th><th>Ukupno odigranih meceva</th></tr></thead><tbody>';
-            $.each($.parseJSON(result), function(i, val) {
+                let pod = JSON.parse(result);
+                console.log(pod.competitions);
+              var text = '<table class="table table-stipped"><thead><tr><th>Liga</th><th>Drzava</th><th>Broj sezona</th><th>Kod lige</th></tr></thead><tbody>';
+
+              let podaci = $.parseJSON(result);
+
+              $.each(podaci.competitions, function(i, val) {
+                    let code = '/';
+
+                  if (val.code !== null){
+                      code = val.code;
+                  }
+
               text += '<tr>';
-              text += '<td>'+val.caption+'</td>';
-              text += '<td>'+val.numberOfMatchdays+'</td>';
-              text += '<td>'+val.numberOfTeams+'</td>';
-              text += '<td>'+val.numberOfGames+'</td>';
+              text += '<td>'+val.name+'</td>';
+              text += '<td>'+val.area.name+'</td>';
+              text += '<td>'+val.numberOfAvailableSeasons+'</td>';
+              text += '<td>'+code+'</td>';
               text += '</tr>';
 
               });

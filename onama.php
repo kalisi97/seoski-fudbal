@@ -35,9 +35,9 @@ i<?php
 				<div class="col-lg-8 col-lg-offset-2">
 					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
 					<div class="section-heading text-center">
-					<h2 class="h-bold">O ligi</h2>
+					<h2 class="h-bold">Nesto o nama</h2>
 					<div class="divider-header"></div>
-					<p>Zasto postojimo ?</p>
+					<p>Ko smo mi? </p>
 					</div>
 					</div>
 				</div>
@@ -50,20 +50,29 @@ i<?php
 
 
                 <div class="row">
-                        <div class="col-xs-6 col-sm-6 col-md-6 wow bounceInUp text-left">
+                        <div class="col-xs-12 col-sm-12 col-md-12 wow bounceInUp text-left">
                             <h2 class="text-center">Nasa liga</h2>
-                            <p>Ova liga je stvorena da bi zasitila nase potrebe za fudbalom. Veliki asovi izlaze ovde da igraju svake nedelje
-                               i ovo sluzi da pratimo nas progres. Svake nedelje igra se nova utakmica i na kraju pobednik uzima trofej i ima pravo da pravi zabavu prema ostalim timovima. Fuca do kraja.</p>
+                            <p class="text-center">Zene fudbalera koje zele da vide svoje muzeve zive i zdrave posle utakmica.</p>
                         </div>
-                        <div class="col-xs-6 col-sm-6 col-md-6 wow bounceInUp text-left">
-                            <img class="img img-responsive" src="img/urke.jpg">
-                        </div>
-
-
-
-
 		              </div>
 		        </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h1>Katarina Simic</h1>
+                    <img src="assets/katarina.jpg" class="img img-thumbnail">
+                    <p>Ona svog Urosa zeli da zastiti najvise na svetu. Posle svake utakmice u beton ligi sledi makar dva piva.</p>
+                </div>
+                <div class="col-md-4">
+                    <h1>Andjelija Skobelev</h1>
+                    <img src="assets/andjelija.jpg" class="img img-thumbnail">
+                    <p>Zastitnica Srbstva, a samim tim i srbskog fudbala, uvek navija da vidi nekog dobrog fudbalera deliju</p>
+                </div>
+                <div class="col-md-4">
+                    <h1>Kristina Smiljanic</h1>
+                    <img src="assets/kristina.jpg" class="img img-thumbnail">
+                    <p>Aktivno trazi decka fudbalera</p>
+                </div>
+            </div>
 		</div>
 	</section>
 	<!-- /Section: about -->

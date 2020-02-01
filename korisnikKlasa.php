@@ -29,7 +29,7 @@ class Korisnik {
 		$parameters = json_encode($data);
 
 		
-			$curl_zahtev = curl_init("http://localhost/betonliga/projekat/flightApi/unesiKorisnika.json");
+			$curl_zahtev = curl_init("http://localhost/seoski-fudbal/flightApi/unesiKorisnika.json");
 			curl_setopt($curl_zahtev, CURLOPT_POST, TRUE);
 			curl_setopt($curl_zahtev, CURLOPT_POSTFIELDS, $parameters);
 			curl_setopt($curl_zahtev, CURLOPT_RETURNTRANSFER, 1);

@@ -72,7 +72,7 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 wow bounceInUp text-left">
                           <ul class="list-group">
                           <?php
-                            $curl_zahtev = curl_init("http://localhost/betonliga/projekat/flightApi/timoviPoGradovima.json");
+                            $curl_zahtev = curl_init("http://localhost/seoski-fudbal/flightApi/timoviPoGradovima.json");
                             curl_setopt($curl_zahtev, CURLOPT_RETURNTRANSFER, 1);
                             $curl_odgovor = curl_exec($curl_zahtev);
                             $json_objekat=json_decode($curl_odgovor, true);
@@ -85,7 +85,7 @@
                 <h1> Neverifikovani korisnici </h1>
                 <ul class="list-group">
                 <?php
-                  $curl_zahtev = curl_init("http://localhost/betonliga/projekat/flightApi/verifikovaniKorisnici.json");
+                  $curl_zahtev = curl_init("http://localhost/seoski-fudbal/flightApi/verifikovaniKorisnici.json");
                   curl_setopt($curl_zahtev, CURLOPT_RETURNTRANSFER, 1);
                   $curl_odgovor = curl_exec($curl_zahtev);
                   $json_objekat=json_decode($curl_odgovor, true);
