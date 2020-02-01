@@ -1,0 +1,13 @@
+[24-Feb-2017 15:32:40 Europe/Paris] PHP Warning:  mysqli::mysqli(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\wamp\www\betonliga\projekat\db.php on line 74
+[24-Feb-2017 15:32:41 Europe/Paris] PHP Stack trace:
+[24-Feb-2017 15:32:41 Europe/Paris] PHP   1. {main}() C:\wamp\www\betonliga\projekat\registracija.php:0
+[24-Feb-2017 15:32:41 Europe/Paris] PHP   2. include() C:\wamp\www\betonliga\projekat\registracija.php:7
+[24-Feb-2017 15:32:41 Europe/Paris] PHP   3. MysqliDb->__construct() C:\wamp\www\betonliga\projekat\init.php:4
+[24-Feb-2017 15:32:41 Europe/Paris] PHP   4. mysqli->mysqli() C:\wamp\www\betonliga\projekat\db.php:74
+[24-Feb-2017 15:32:41 Europe/Paris] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in C:\wamp\www\betonliga\projekat\db.php on line 77
+[24-Feb-2017 15:32:41 Europe/Paris] PHP Stack trace:
+[24-Feb-2017 15:32:41 Europe/Paris] PHP   1. {main}() C:\wamp\www\betonliga\projekat\registracija.php:0
+[24-Feb-2017 15:32:41 Europe/Paris] PHP   2. include() C:\wamp\www\betonliga\projekat\registracija.php:7
+[24-Feb-2017 15:32:41 Europe/Paris] PHP   3. MysqliDb->__construct() C:\wamp\www\betonliga\projekat\init.php:4
+[24-Feb-2017 15:32:41 Europe/Paris] PHP   4. mysqli->set_charset() C:\wamp\www\betonliga\projekat\db.php:77
