@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.5.1
--- http://www.phpmyadmin.net
+-- version 4.8.2
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 19, 2017 at 02:02 PM
--- Server version: 5.7.11
--- PHP Version: 5.6.19
+-- Generation Time: Feb 01, 2020 at 03:11 PM
+-- Server version: 10.1.34-MariaDB
+-- PHP Version: 5.6.37
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -169,9 +171,9 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `ime`, `prezime`, `username`, `password`, `admin`, `verifikovano`) VALUES
-(1, 'Urke', 'Savov', 'urke', 'urke', 1, 1),
-(2, 'Vladimir', 'Cakovic', 'cako', 'cako', 0, 1),
-(3, 'cone', 'cone', 'cone', 'cone', 0, 0);
+(1, 'Katarina', 'Simic', 'kalisi', 'kalisi', 1, 1),
+(2, 'Andjelija', 'Skobeleva', 'skobeleva', 'skobeleva', 0, 1),
+(3, 'Kristina', 'Smiljanic', 'kika', 'kika', 0, 0);
 
 --
 -- Indexes for dumped tables
@@ -220,26 +222,31 @@ ALTER TABLE `user`
 --
 ALTER TABLE `grad`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
 --
 -- AUTO_INCREMENT for table `mec`
 --
 ALTER TABLE `mec`
   MODIFY `mecID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+
 --
 -- AUTO_INCREMENT for table `tabela`
 --
 ALTER TABLE `tabela`
   MODIFY `rb` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
 --
 -- AUTO_INCREMENT for table `tim`
 --
 ALTER TABLE `tim`
   MODIFY `timID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
 -- Constraints for dumped tables
 --
@@ -262,6 +269,7 @@ ALTER TABLE `tabela`
 --
 ALTER TABLE `tim`
   ADD CONSTRAINT `tim_ibfk_1` FOREIGN KEY (`gradID`) REFERENCES `grad` (`id`);
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

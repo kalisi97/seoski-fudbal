@@ -1904,3 +1904,18 @@ a.btn:focus{
 	}
 	
 }
+
+#chat{
+    width: 500px;
+    height: 600px;
+    border: #ff76e2 2px solid;
+    color: #3bbec0;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 99999;
+    background-color: #b7daff;
+}
+#pitanje{
+    margin-top: 10px;
+}

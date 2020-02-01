@@ -94,10 +94,7 @@
 		        </div>
 		</div>
 	</section>
-	<!-- /Section: about -->
-
-	<!-- Section: parallax 1 -->
-
+  <?php include "chat.php"; ?>
 
 <?php
   include("footer.php");
@@ -126,4 +123,9 @@ $(document).ready(function(){
     $('#tabelaa').DataTable();
 });
 </script>
+
+<?php
+include "chatBotLogika.php";
+?>
+
 </html>
